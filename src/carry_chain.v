@@ -19,7 +19,7 @@ module carry_chain #(
             if (i == 0) begin
                 // First stage: CYINIT gets the start pulse
                 CARRY4 #() carry_inst (
-                    .CO({cout[i], /* unused bits */}),
+                    .CO({cout[i]}),
                     .O (o),
                     .CI(1'b0),
                     .CYINIT(start),
@@ -29,7 +29,7 @@ module carry_chain #(
             end else begin
                 // Subsequent stages: CI connects to previous COUT
                 CARRY4 #() carry_inst (
-                    .CO({cout[i], /* unused */}),
+                    .CO({cout[i]}),
                     .O (o),
                     .CI(cout[i-1]),
                     .CYINIT(1'b0),
