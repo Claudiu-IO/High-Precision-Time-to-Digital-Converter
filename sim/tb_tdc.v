@@ -22,6 +22,9 @@ module tb_tdc();
         start = 0;
         stop  = 0;
        
+        // Now it's waiting the 200 ns for the Global Set/Reset (GSR) to finish.
+        #200000;
+       
         #100;
         start = 1;
         #1;
