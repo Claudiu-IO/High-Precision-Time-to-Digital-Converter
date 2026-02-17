@@ -1,0 +1,31 @@
+# Vivado project files
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.srcs/
+*.jou
+*.log
+*.str
+*.xpr
+*.Xil/
+
+# Simulation files
+*.wlf
+*.vcd
+*.vcd.vcd
+*.vcd~
+*.vcd.old
+*.asdb
+*.fsdb
+
+# Synthesis/implementation outputs
+*.bit
+*.bin
+*.mcs
+*.prm
+*.bmm
+
+# OS metadata
+.DS_Store
+Thumbs.db
