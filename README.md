@@ -2,6 +2,11 @@ High-Precision FPGA Time-to-Digital Converter
 
 ![alt text](<Screenshot from 2026-02-17 20-38-04.png>)
 
+Yellow Cursor: Marks the completion of the propagation event (T≈211.986 ns).
+
+Waveform: The taps signal shows the "Inverted Thermometer" code draining from all ones (f) to all zeros (0) as the pulse propagates through the delay line.
+
+
 Key Specs:
 
     Architecture: Tapped Delay Line (CARRY4 Primitives)
@@ -15,8 +20,6 @@ Key Specs:
     I used Xilinx CARRY4 primitives to access the FPGA's dedicated fast carry logic. This allowed me to bypass the general routing matrix, which is too slow and unpredictable for high-precision timing and instead use hardwired silicon paths to achieve uniform sub-nanosecond delay steps.
 
     
-
-
 Performance Characterization:
 
     The TDC resolution was characterized using Post-Implementation Timing Simulation in Vivado (Artix-7 target).
