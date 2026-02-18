@@ -1,5 +1,7 @@
 High-Precision FPGA Time-to-Digital Converter
 
+![alt text](<Screenshot from 2026-02-17 20-38-04.png>)
+
 Key Specs:
 
     Architecture: Tapped Delay Line (CARRY4 Primitives)
